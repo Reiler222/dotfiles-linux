@@ -1,0 +1,14 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$all
+"""
+
+[aws]
+format = 'on [$symbol$profile\($region\)]($style)'
+style = "#ff8400"
+symbol ="☁️ "
+
+[python]
+style = "#ffd900"
+
