@@ -1,6 +1,5 @@
 [user]
 	name = Andrés Urraca Barredo
-	email = aurraca.contractor@veridas.com
 [alias]
 	lg = log --oneline --graph --all
 	c = commit -m

@@ -1,5 +1,9 @@
 #!/bin/bash
 
+
+#Adding PPAs
+sudo add-apt-repository ppa:nathan-renniewaldock/flux
+
 sudo apt update && sudo apt full-upgrade -y
 
 function install {
@@ -12,7 +16,7 @@ function install {
     fi
 }
 
-# Basicos por consola
+# Basic stuff
 install zsh
 install git
 install curl
@@ -23,3 +27,13 @@ install lsd
 install starship
 install coreutils
 install vivid
+install fluxgui
+
+# Snap stuff
+
+snap install postman
+snap install obsidian --classic --dangerous
+snap install spotify
+
+sudo apt upgrade -y
+sudo apt autoremove -y
