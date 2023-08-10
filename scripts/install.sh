@@ -20,6 +20,8 @@ function install {
 install zsh
 install git
 install curl
+install gpg
+install wget
 install tree
 install openvpn
 install vim
