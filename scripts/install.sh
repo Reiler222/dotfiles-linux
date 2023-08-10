@@ -23,6 +23,8 @@ install curl
 install gpg
 install wget
 install tree
+install python3-venv
+install python3-pip
 install openvpn
 install vim
 install lsd

@@ -11,7 +11,7 @@ sudo apt install -y code
 
 function install {
   name="${1}"
-  code --install-extension ${name} --force
+  code --install-extension "${name}" --force
 }
 
 install redhat.ansible
