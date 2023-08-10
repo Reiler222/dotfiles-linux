@@ -17,7 +17,6 @@ function install {
 }
 
 # Basic stuff
-install zsh
 install git
 install curl
 install gpg
@@ -30,7 +29,6 @@ install vim
 install lsd
 install starship
 install coreutils
-install vivid
 install fluxgui
 
 # Snap stuff
