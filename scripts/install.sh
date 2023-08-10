@@ -31,11 +31,17 @@ install starship
 install coreutils
 install fluxgui
 
+# Not that basic stuff
+
+install telegram-desktop
+
 # Snap stuff
 
 snap install postman
 snap install obsidian --classic --dangerous
 snap install spotify
+snap install bitwarden
+
 
 sudo apt upgrade -y
 sudo apt autoremove -y
