@@ -32,3 +32,10 @@ install ms-python.python
 install donjayamanne.python-extension-pack
 install chrmarti.regex
 install redhat.vscode-yaml
+
+FILES="../../vscsettings/*"
+# For loop 
+for file in $FILES
+do 
+  cp "$file" "$HOME/.config/Code"
+done

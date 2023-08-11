@@ -1,0 +1,77 @@
+{
+    "editor.linkedEditing": true,
+    "editor.suggestSelection": "first",
+    "editor.accessibilitySupport": "off",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 15,
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "400",
+    "editor.minimap.enabled":false,
+    "editor.snippetSuggestions":"top",
+
+
+    "files.autoSave":"afterDelay",
+    "files.autoSaveDelay":500,
+    "files.associations": {
+        "**/ansible/roles/**/*.yml": "ansible",
+        "**/ansible/environment/**/*.yml": "ansible"
+    },
+
+    
+    "security.workspace.trust.untrustedFiles": "open",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "redhat.telemetry.enabled": false,
+    "telemetry.enableTelemetry":false,
+    "telemetry.enableCrashReporter":false,
+    "workbench.colorTheme": "Theme",
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "settingsSync.ignoredSettings": [
+        "editor.fontFamily"
+    ],
+
+
+    "sync.autoDownload": true,
+    "sync.autoUpload": true,
+    "sync.gist": "90e160de725aa45ed242139390fc6f98",
+    "sync.quietSync": true,
+    "git.confirmSync": false,
+    "material-icon-theme.folders.color": "#ef5350",
+    "workbench.iconTheme": "eq-material-theme-icons-light",
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "aws.suppressPrompts": {
+        "regionAddAutomatically": true
+    },
+}
