@@ -37,5 +37,5 @@ FILES="../../vscsettings/*"
 # For loop 
 for file in $FILES
 do 
-  cp "$file" "$HOME/.config/Code"
+  ln -s "$file" "$HOME/.config/Code"
 done

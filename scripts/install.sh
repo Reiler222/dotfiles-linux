@@ -1,5 +1,6 @@
 #!/bin/bash
 
+./symlinks.sh
 
 #Adding PPAs
 sudo add-apt-repository ppa:nathan-renniewaldock/flux
@@ -42,6 +43,10 @@ snap install obsidian --classic --dangerous
 snap install spotify
 snap install bitwarden
 
+for file in apps/*.sh
+do
+bash "$file" -H
+done
 
 sudo apt upgrade -y
 sudo apt autoremove -y
