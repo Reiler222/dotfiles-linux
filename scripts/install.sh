@@ -2,7 +2,8 @@
 
 ./symlinks.sh
 
-sudo add-apt-repository ppa:nathan-renniewaldock/flux
+# Still giving errors. Must check this utterly useless ppa-thing
+sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
 
 sudo apt update && sudo apt upgrade -y
 
@@ -37,17 +38,18 @@ install telegram-desktop
 
 # Snap stuff
 
-snap install postman
-snap install obsidian --classic --dangerous
-snap install spotify
-snap install bitwarden
+sudo snap install postman
+sudo snap install obsidian --classic --dangerous
+sudo snap install spotify
+sudo snap install bitwarden
 
+# Execute every .sh in apps dir
 for file in apps/*.sh
 do
 bash "$file" -H
 done
 
-sudo add-apt-repository -r ppa:nathan-renniewaldock/flux
+sudo add-apt-repository -r -y ppa:nathan-renniewaldock/flux
 
 sudo apt upgrade -y
 sudo apt autoremove -y
