@@ -27,14 +27,19 @@ install python3-venv
 install python3-pip
 install openvpn
 install vim
-install lsd
-install starship
+# install lsd FALLA
 install coreutils
 install fluxgui
 
 # Not that basic stuff
 
 install telegram-desktop
+
+curl -sS https://starship.rs/install.sh | sh
+
+# Install lsd
+curl -s https://api.github.com/repos/lsd-rs/lsd/releases/latest | grep "browser_download_url.*amd64.deb" | grep "lsd_" | cut -d '"' -f 4 | wget -qi -
+ls | grep "amd64.deb" | sudo dkpg -i -
 
 # Snap stuff
 
