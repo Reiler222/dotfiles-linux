@@ -2,10 +2,9 @@
 
 ./symlinks.sh
 
-#Adding PPAs
 sudo add-apt-repository ppa:nathan-renniewaldock/flux
 
-sudo apt update && sudo apt full-upgrade -y
+sudo apt update && sudo apt upgrade -y
 
 function install {
     which "$1" &> /dev/null
@@ -47,6 +46,8 @@ for file in apps/*.sh
 do
 bash "$file" -H
 done
+
+sudo add-apt-repository -r ppa:nathan-renniewaldock/flux
 
 sudo apt upgrade -y
 sudo apt autoremove -y

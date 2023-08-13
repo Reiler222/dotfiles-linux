@@ -2,8 +2,8 @@
 
 echo "Install zsh and plugins..."
 
-sudo apt install zsh
-sudo apt install vivid
+sudo apt install -y zsh
+sudo apt install -y vivid
 
 # Installing plugins for zsh
 

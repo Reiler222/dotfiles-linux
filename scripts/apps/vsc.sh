@@ -34,7 +34,15 @@ install chrmarti.regex
 install redhat.vscode-yaml
 
 FILES="../../vscsettings/*"
-# For loop 
+
+# Check if Code dir exists 
+if [ -d "$HOME/.config/Code" ]; then
+    echo "Code already exist"
+else
+    mkdir "$HOME/.config/Code"
+    echo "Code dir created"
+fi
+ 
 for file in $FILES
 do 
   ln -s "$file" "$HOME/.config/Code"
