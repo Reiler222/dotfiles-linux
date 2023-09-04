@@ -8,7 +8,7 @@ if [ -f "$HOME/.bashrc" ]; then
     rm -f "$HOME/.bashrc"
 fi
 
-ln -s ${dotfilesDir}/.bashrc $HOME/.bashrc 
-ln -s ${dotfilesDir}/.zshrc $HOME/.zshrc  
-ln -s ${dotfilesDir}/.gitconfig $HOME/.gitconfig  
-ln -s ${dotfilesDir}/starship.toml $HOME/.config/starship.toml
+ln -s ${workingDir}/.bashrc $HOME/.bashrc 
+ln -s ${workingDir}/.zshrc $HOME/.zshrc  
+ln -s ${workingDir}/.gitconfig $HOME/.gitconfig  
+ln -s ${workingDir}/starship.toml $HOME/.config/starship.toml
