@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Install zsh and plugins..."
+echo "Instalando zsh y plugins..."
 
 sudo apt install -y zsh
 sudo apt install -y vivid

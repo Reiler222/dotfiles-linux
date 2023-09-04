@@ -14,6 +14,8 @@ function install {
     fi
 }
 
+echo "Instalando cosas relativamente basicas..."
+
 # Basic stuff
 install git
 install curl
@@ -34,22 +36,23 @@ curl -sS https://starship.rs/install.sh | sh
 
 # Install lsd
 curl -s https://api.github.com/repos/lsd-rs/lsd/releases/latest | grep "browser_download_url.*amd64.deb" | grep "lsd_" | cut -d '"' -f 4 | wget -qi -
-ls | grep "amd64.deb" | sudo dkpg -i -
+ls | grep "amd64.deb" | sudo dpkg -i -
 
 # Snap stuff
 
+echo "Vamos con los snaps..."
+
 sudo snap install postman
-sudo snap install obsidian --classic --dangerous
+sudo snap install obsidian --classic
 sudo snap install spotify
 sudo snap install bitwarden
 
 # Execute every .sh in apps dir
+
 for file in apps/*.sh
 do
 bash "$file" -H
 done
-
-sudo add-apt-repository -r -y ppa:nathan-renniewaldock/flux
 
 sudo apt upgrade -y
 sudo apt autoremove -y

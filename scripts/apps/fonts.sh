@@ -2,6 +2,8 @@
 
 # https://www.nerdfonts.com/
 
+echo "Instalando fuentes..."
+
 # JetBrainsMono Nerd Font
 curl -OL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.tar.xz
 mkdir JetBrainsMono

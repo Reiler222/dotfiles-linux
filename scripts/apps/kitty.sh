@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Instalando Kitty..."
+
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 # Create symbolic links to add kitty and kitten to PATH (assuming ~/.local/bin is in tyour system-wide PATH)
