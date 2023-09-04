@@ -2,9 +2,6 @@
 
 ./symlinks.sh
 
-# Still giving errors. Must check this utterly useless ppa-thing
-sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
-
 sudo apt update && sudo apt upgrade -y
 
 function install {
@@ -27,9 +24,7 @@ install python3-venv
 install python3-pip
 install openvpn
 install vim
-# install lsd FALLA
 install coreutils
-install fluxgui
 
 # Not that basic stuff
 
