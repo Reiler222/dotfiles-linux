@@ -36,7 +36,7 @@ curl -sS https://starship.rs/install.sh | sh
 
 # Install lsd
 curl -s https://api.github.com/repos/lsd-rs/lsd/releases/latest | grep "browser_download_url.*amd64.deb" | grep "lsd_" | cut -d '"' -f 4 | wget -qi -
-ls | grep "amd64.deb" | sudo dpkg -i -
+ls | grep "amd64.deb" | sudo dpkg -i *.amd64.deb
 
 # Snap stuff
 

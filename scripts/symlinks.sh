@@ -6,6 +6,8 @@ workingDir=$(pwd)
 
 if [ -f "$HOME/.bashrc" ]; then
     rm -f "$HOME/.bashrc"
+elif [ -d "$HOME/.config" ]; then
+    mkdir "$HOME/.config"
 fi
 
 ln -s $workingDir/.bashrc $HOME/.bashrc 
