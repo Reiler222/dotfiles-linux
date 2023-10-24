@@ -27,6 +27,7 @@ install python3-pip
 install openvpn
 install vim
 install coreutils
+install apt-transport-https
 
 # Not that basic stuff
 
