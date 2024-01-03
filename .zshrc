@@ -1,4 +1,3 @@
-source ~/.zsh/zsh-snap/znap.zsh
 export PATH="$PATH:/snap/bin/"
 export XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/snapd/desktop/applications"
 
