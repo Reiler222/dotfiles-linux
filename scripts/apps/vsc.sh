@@ -33,6 +33,7 @@ install ms-python.python
 install donjayamanne.python-extension-pack
 install chrmarti.regex
 install redhat.vscode-yaml
+install alefragnani.project-manager
 
 FILES="../../vscsettings/*"
 
