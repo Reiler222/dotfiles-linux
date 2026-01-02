@@ -1,5 +1,5 @@
 [user]
-	name = Andrés Urraca Barredow
+	name = Andrés Urraca
 [alias]
 	lg = log --oneline --graph --all
 	c = commit -m
